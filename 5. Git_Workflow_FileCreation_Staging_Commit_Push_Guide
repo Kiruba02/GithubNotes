@@ -1,0 +1,58 @@
+1. Creating a New File and Checking Status
+Create a new file in Visual Studio Code.
+Click New File and name the file: "test2.txt"
+Open the VS Code terminal and run the command : git status
+Output shows the file as an untracked file.
+This indicates a newly created file that is not yet added to Git tracking.
+
+2. Previous Setup Explanation
+
+Flow 1: GitHub (Test1.txt) → Git Copy Folder → Working Folder
+
+Origin Repository : https://github.com/Kiruba02/GithubNotes.git
+The origin repository contains an existing file.
+Repository is copied to the local machine using the clone command.
+Command : git clone {origin}
+Reason for cloning: Cloning creates a local copy of the remote GitHub repository for development and modification.
+
+3. Flow 1 Explanation : 
+The clone operation creates a connection between GitHub and the Git Copy Folder.
+The Working Folder contains test2.txt as an untracked file.
+GitHub contains Test1.txt.
+After cloning, the Git Copy Folder contains Test1.txt, which is copied from the GitHub repository.
+
+4. Local Machine Structure
+Local machine contains a Git Copy Folder and a Working Folder.
+A new file (test2.txt) is created inside the Working Folder (Visual Studio Code).
+After file creation, running git status shows the file as an untracked file because Git has not started tracking the file yet.
+
+5. Next Step
+Use the following command in the VS Code terminal:
+Command : git add {file name}
+Example : git add test2.txt
+Note : The add operation creates a connection between the Working Folder and the Staging Area.
+
+6. Flow 2
+GitHub (Test1.txt) → Git Copy Folder → Working Folder → Staging Area
+
+7. What is the Staging Area?
+Check the status using : git status
+The output shows “changes to be committed.”
+This state is called the Staging Area, where selected changes are prepared before committing.
+
+8. Commit Operation
+At this stage, the origin repository does not contain test2.txt.
+Use the commit command : git commit -m "test2.txt added"
+
+9. Flow Explanation:
+Using the add command changes the file state from untracked to staged (moves from Working Folder to Staging Area).
+Using the commit command moves the changes from the Staging Area to the Git Copy Folder (local repository).
+Using the push command transfers changes from the Git Copy Folder to GitHub.
+
+10. Push Changes to Origin
+To display test2.txt in the origin repository, use:
+Command : git push origin main
+This command uploads committed changes to the GitHub repository.
+
+
+
