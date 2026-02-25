@@ -1,0 +1,12 @@
+How to Create an Account in Github :
+Go to "https://github.com/".
+If an account already exists, sign in.
+If no account exists, sign up.
+The Plus (+) icon will be visible. Click the Plus (+) icon and select **New repository**.
+Enter the folder name and click **Create repository**.
+Two options will appear: creating a new file or uploading an existing file.
+Select **Create a new file**.
+After clicking, enter the file name
+(eg: test.txt).
+Add content and click **Commit changes**.
+Enter a commit message and click **Commit changes**.
