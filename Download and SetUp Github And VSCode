@@ -1,0 +1,24 @@
+How to Download Git:
+Go to "https://git-scm.com/".
+Click **Windows**.
+Click **Click here to download**.
+After the download is completed, open the Git setup file on the laptop.
+Click **Next** for all the questions and finally click **Finish**.
+
+Open Command Prompt in laptop.
+Enter the command: git
+Example:
+C:\Users\ekiruba>git
+Note : If Git is installed correctly, Git information will appear, which means Git is set up on the computer.
+
+Set Username and Email ID in Git:
+Enter the command : git config --global user.name "{{GitHub user name}}"
+Example : C:\Users\ekiruba>git config --global user.name "Kiruba"
+
+Enter the command : git config --global user.email "{{GitHub login email}}"
+Example : C:\Users\ekiruba>git config --global user.email "kirubaelango03@gmail.com"
+
+Now Git setup is ready for working, so close the Command Prompt.
+
+Download Visual studio code : 
+Go to "https://code.visualstudio.com/"
