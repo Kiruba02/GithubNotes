@@ -1,0 +1,28 @@
+1. Process to move a Git repository to a new folder in Visual Studio : 
+
+open new folder in desktop (i.e ExampleGIT) 
+open visual studio code 
+(give a path like this ""C:\Users\ekiruba\Desktop\ExampleGIT"
+You go to created repository in github
+click "code" 
+copy the link (eg : "https://github.com/Kiruba02/GithubNotes.git") which is under https 
+Open terminal in vs code 
+Give a Command :  "git clone {link}"
+Example  : git clone "https://github.com/Kiruba02/GithubNotes.git"
+click enter 
+you will see repository which is created in github
+you will cross check with file explorer ("C:\Users\ekiruba\Desktop\ExampleGIT")
+
+2. Moving a Created Git Repository (GithubNotes) from Desktop Folder (ExampleGIT)
+Open terminal and navigate to the created repository using the command:
+Command :  cd "{{created repository name In  github}} "
+Example : cd "GithubNotes"
+Press Enter.
+Terminal path will appear as : "C:\Users\ekiruba\Desktop\ExampleGIT\GithubNotes>"
+Open File Explorer and navigate to the path: "C:\Users\ekiruba\Desktop\ExampleGIT\GithubNotes"
+Click View → enable Show → select Hidden items.
+The hidden .git folder becomes visible.
+
+Now, You will see the test1.txt file in vs code via GithubNotes Folder
+
+Note : The .git folder acts as a bridge between the GitHub repository and the local desktop folder opened in Visual Studio Code.
