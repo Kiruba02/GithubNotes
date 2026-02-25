@@ -7,6 +7,6 @@ Enter the folder name and click **Create repository**.
 Two options will appear: creating a new file or uploading an existing file.
 Select **Create a new file**.
 After clicking, enter the file name
-(eg: test.txt).
+(eg: test1.txt).
 Add content and click **Commit changes**.
 Enter a commit message and click **Commit changes**.
