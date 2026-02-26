@@ -1,0 +1,38 @@
+Scenario : 
+A file test3.txt is created in the working folder and later deleted using Visual Studio Code.
+The file is removed only from the local working directory and still exists in the remote repository (origin – GitHub).
+
+Step 1: Check File Status
+After deleting the file in the working folder
+
+Command : git status
+Output : Git displays the file as : "deleted: test3.txt"
+
+Step 2: Add the Deletion to the Staging Area
+Stage the deletion using:
+Command : git add {file name}
+Example : git add test3.txt
+Purpose:
+The add command stages the deletion change and moves it to the Staging Area.
+
+Step 3: Commit the Change
+Command : git commi -m {commit message}
+Example : git commit -m "test3.txt deleted"
+Purpose : The commit command saves the staged deletion into the local Git repository.
+
+Step 4: Push to Remote Repository (Origin)
+Push the committed change to GitHub:
+Commit : git push origin main
+Example : git push origin main
+Origin Repository: https://github.com/Kiruba02/GithubNotes.git
+Purpose :The push command updates the remote repository and removes the file from GitHub.
+
+Deletion Flow Explanation
+File test3.txt is deleted in the working folder.
+git add stages the deletion.
+git commit records the deletion in the local repository.
+git push updates GitHub and removes the file from the remote repository.
+
+Conclusion
+Any modification such as file creation, update, or deletion follows the same workflow:
+Modification (Insert / Update / Delete) → Add → Commit → Push
