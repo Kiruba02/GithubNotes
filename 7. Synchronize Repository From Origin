@@ -1,0 +1,39 @@
+## Git Pull – Synchronizing Changes from Origin Repository
+
+### Scenario
+A file **dummy.txt** is created directly in the origin repository (GitHub).
+The file is not available in the local working folder because the local repository is not yet synchronized with the remote repository.
+---
+### Step 1: Pull Changes from Origin
+Run the following command in the working folder:
+```
+Command :  git pull
+```
+**Purpose:**
+The `git pull` command downloads the latest changes from the remote repository (origin) and updates the local repository and working folder.
+---
+### Result
+* The newly created file **dummy.txt** becomes available in the working folder.
+* The local repository is synchronized with the origin repository.
+---
+### Scenario – Updating Existing Files
+If the content of **test1.txt** is modified in the origin repository, run:
+```
+Command : git pull
+```
+**Result:**
+* The updated content is fetched from GitHub.
+* The same changes are reflected automatically in the working folder.
+---
+### Technical Explanation
+The `git pull` command performs two operations:
+1. **Fetch** – Downloads the latest commits from the remote repository.
+2. **Merge** – Applies the downloaded changes to the local branch.
+---
+### Synchronization Flow
+```
+GitHub (Origin Repository) → Local Git Repository → Working Folder
+```
+---
+### Conclusion
+The `git pull` command is used to synchronize the local working environment with the latest updates available in the origin repository.
